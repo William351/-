@@ -1,4 +1,4 @@
-name: 哆哆链接自动签到
+name: 朵朵自动签到
 
 on:
   schedule:
