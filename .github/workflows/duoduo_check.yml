@@ -23,17 +23,11 @@ jobs:
       with:
         python-version: '3.10'
 
-    - name: 检查当前目录内容
-      run: ls -R
+    - name: 设置 duoduo_signin.py 可执行权限
+      run: chmod +x scripts/duoduo_signin.py
 
-    - name: 检查 scripts 目录内容
-      run: |
-        echo "当前工作目录:"
-        pwd
-        echo "工作目录内容:"
-        ls -R
-        echo "scripts 目录内容:"
-        ls scripts || echo "scripts 目录不存在"
+    - name: 确认脚本路径和权限
+      run: ls -l scripts/duoduo_signin.py
 
     - name: 安装依赖
       run: |
