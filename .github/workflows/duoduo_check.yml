@@ -1,4 +1,4 @@
-name: 朵朵自动签到
+name: duoduo_autocheck
 
 on:
   schedule:
