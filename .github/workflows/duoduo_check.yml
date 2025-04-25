@@ -30,6 +30,6 @@ jobs:
         
     - name: 运行签到脚本
       timeout-minutes: 10
-      run: python duoduo_signin.py  # 注意这里改为直接引用根目录文件
+      run: python scripts/duoduo_signin.py   # 注意这里改为直接引用根目录文件
       env:
         DUODUO_TOKEN: ${{ secrets.DUODUO_TOKEN }}
