@@ -36,6 +36,6 @@ jobs:
         
     - name: 运行签到脚本
       timeout-minutes: 10
-      run: python scripts/duoduo_signin.py
+      run: python duoduo_signin.py
       env:
         DUODUO_TOKEN: ${{ secrets.DUODUO_TOKEN }}
