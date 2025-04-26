@@ -23,11 +23,6 @@ jobs:
       with:
         python-version: '3.10'
 
-    - name: 设置 duoduo_signin.py 可执行权限
-      run: chmod +x scripts/duoduo_signin.py
-
-    - name: 确认脚本路径和权限
-      run: ls -l scripts/duoduo_signin.py
 
     - name: 安装依赖
       run: |
